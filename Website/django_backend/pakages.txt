@@ -1,0 +1,39 @@
+python3 -m venv myvnv 
+
+pip install asgiref
+pip install async-timeout
+pip install attrs
+pip install autobahn
+pip install Automat
+pip install cffi
+pip install channels
+pip install channels-redis
+pip install constantly
+pip install cryptography
+pip install daphne
+pip install Django
+pip install django-cors-headers
+pip install djangorestframework
+pip install hyperlink
+pip install idna
+pip install incremental
+pip install msgpack
+pip install pillow
+pip install psycopg2-binary
+pip install pyasn1
+pip install pyasn1-modules
+pip install pycparser
+pip install pyOpenSSL
+pip install redis
+pip install service-identity
+pip install six
+pip install sqlparse
+pip install twisted
+pip install txaio
+pip install typing-extensions
+pip install zope.interface
+
+http://127.0.0.1:8000/notification/refuse_friend/<int:userID>/<int:friendID>
+http://127.0.0.1:8000/notification/blocker_friend/<int:userID>/<int:friendID>
+http://127.0.0.1:8000/notification/deblocker_friend/<int:userID>/<int:friendID>
+http://127.0.0.1:8000/notification/show_block/<int:userID>/<int:friendID>

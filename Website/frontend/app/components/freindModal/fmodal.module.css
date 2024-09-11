@@ -1,0 +1,128 @@
+
+.background
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000 !important;
+    backdrop-filter: blur(5px);
+}
+
+.modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1000;
+    height: 550px;
+    width: 360px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: fadeIn 1s;
+}
+
+.closeButton {
+    position: absolute;
+    color: rgb(172, 172, 172);
+    top: 2%;
+    right: 3%;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.eye {
+    display: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.openEye {
+    display: block; 
+}
+
+.closeButton:hover .openEye {
+    display: none;
+}
+
+.closeButton:hover .closedEye {
+    color: tomato;
+    opacity: 1;
+    display: block;
+}
+
+
+.modalHeader {
+    position: relative;
+    border: 0.3px solid white;
+    width: 50%;  /* Adjust if necessary */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.modalHeader h2 {
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    font-size: 1em;
+    transform: translateY(45%);  /* Adjust or remove if it causes text misalignment */
+}
+.modalContent
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3vh;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .modalHeader
+    {
+        transform: scale(0.8);
+    }
+    .modalHeader h2
+    {
+        font-size: 1.2em;
+    }
+    .modalContent
+    {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}

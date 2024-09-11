@@ -1,0 +1,58 @@
+.wrapper {
+  transform: scale(1.5);
+  margin: 0 auto;
+  width: 225px;
+  height: 225px;
+}
+
+.left_wall {
+  float: left;
+  width: 20px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  border-radius: 15px; /* Adjusted border-radius */
+  background: #66FCF1;
+  animation: left-wall 2s infinite;
+}
+
+.right_wall {
+  float: right;
+  width: 20px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  border-radius: 15px; /* Adjusted border-radius */
+  background: #989898;
+  animation: right-wall 2s infinite;
+  overflow: hidden;
+}
+
+.ball {
+  float: left;
+  width: 23px; /* Adjusted width */
+  height: 23px; /* Adjusted height */
+  background: #ffffff;
+  border-radius: 50%;
+  animation: bounce_ball 2s linear infinite;
+}
+
+@keyframes left-wall {
+  0%    { transform: translate(0px, 0px);  }
+  25%   { transform: translate(0px, 15px); }
+  50%   { transform: translate(0px, 75px); }
+  75%   { transform: translate(0px, 150px);}
+  100%  { transform: translate(0px, 0px);  }
+}
+
+@keyframes right-wall {
+  0%    { transform: translate(0px, 0px);  }
+  25%   { transform: translate(0px, 150px);}
+  50%   { transform: translate(0px, 75px); }
+  75%   { transform: translate(0px, 15px); }
+  100%  { transform: translate(0px, 0px);  }
+}
+
+@keyframes bounce_ball {
+  0%    { transform: translate(-5px, 15px);   }
+  25%   { transform: translate(170px, 150px); }
+  50%   { transform: translate(-5px, 112.5px);}
+  75%   { transform: translate(170px, 15px);  }
+  100%  { transform: translate(-5px, 15px);   }
+}

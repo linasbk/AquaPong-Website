@@ -1,0 +1,21 @@
+FROM node:18-alpine
+
+
+WORKDIR /app
+
+COPY frontend/package*.json ./
+
+
+RUN npm install
+
+COPY ./frontend .
+
+RUN echo '#!/bin/sh' > /startup.sh && \
+    echo 'echo "Building Next.js application..."' >> /startup.sh && \
+    echo 'npm run build' >> /startup.sh && \
+    echo 'echo "Build complete. Starting Next.js in production mode..."' >> /startup.sh && \
+    echo 'exec npm run start' >> /startup.sh && \
+    chmod +x /startup.sh
+
+
+CMD ["/startup.sh"]

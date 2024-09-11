@@ -1,0 +1,178 @@
+.LeftSideBar
+{
+    grid-column: 1;
+    grid-row: 1;
+    height: 100vh;
+    width: 5vw;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    backdrop-filter: blur(10px);
+}
+
+.icons
+{
+    color: #FFFFFF;
+    opacity: 0.76;
+    height: 40px;
+    width: 40px;
+}
+
+.icons:hover
+{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.nav
+{
+    grid-row: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.active
+{
+    fill: #66FCF1;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px #66FCF1);
+    opacity: 1;
+}
+
+.signout
+{
+    /* background-color: #d65653; */
+    color: rgb(79, 83, 83) ;
+    font-size: 40px;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    transform: translate(0, 11vh) !important;
+}
+.signout:hover
+{
+    color: #d65653;
+    filter: drop-shadow(0px 0px 5px #d65653);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 768px){
+    .LeftSideBar {
+        margin-bottom: 3%;
+        position: fixed; /* Confirms that the LeftSideBar is fixed */
+        bottom: 0; /* Positions it at the bottom of the viewport */
+        left: 0; /* Ensures it's aligned to the left edge of the viewport */
+        width: 100vw; /* Stretches it across the horizontal axis */
+        height: 5vh; /* Sets a new height */
+        grid-template-columns: repeat(4, 1fr); /* Adjusts columns for horizontal layout */
+        grid-template-rows: 1fr; /* Changes to a single row */
+        transform:  scale(0.8);
+        z-index: 1000; /* Ensures it stays on top of other content */
+    }
+    .nav {
+        flex-direction: row; /* Aligns items horizontally */
+        grid-column: 1 / span 4; /* Spans across all columns */
+        width: 100%; /* Ensures full width usage within the LeftSideBar */
+    }
+    .signout {
+        display: none;
+    }
+}
+
+
+.LeftSideBar
+{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+.icons
+{
+    color: #FFFFFF;
+    opacity: 0.76;
+    height: 40px;
+    width: 40px;
+}
+
+.icons:hover
+{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.nav
+{
+    height: 60%;
+    font-size: 30px;
+    transform: translate(0, 8vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.active
+{
+    fill: #66FCF1;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px #66FCF1);
+    opacity: 1;
+}
+
+.signout
+{
+    height: auto;
+    display: flex;
+    color: rgb(79, 83, 83) ;
+    font-size: 40px;
+    transform: translate(0, 8vh);
+}
+.signout:hover
+{
+    color: #d65653;
+    filter: drop-shadow(0px 0px 5px #d65653);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 720px){
+    .LeftSideBar {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: auto;
+        transform:  scale(0.8);
+        z-index: 1000;
+    }
+    .nav {
+        transform: translate(0, 0);
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .signout {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 768px){
+    .icons {
+        height: 30px;
+        width: 30px;
+    }
+    
+}

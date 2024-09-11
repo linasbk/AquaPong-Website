@@ -1,0 +1,20 @@
+/* modal.css */
+.overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 75%;
+  height: 85%;
+  background: transparent;
+  outline: none;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}

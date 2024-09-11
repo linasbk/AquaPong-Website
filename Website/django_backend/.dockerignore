@@ -1,0 +1,4 @@
+**/migrations/__pycache__/
+**/migrations/*.py
+# But don't ignore __init__.py files
+!**/migrations/__init__.py

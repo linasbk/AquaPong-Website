@@ -1,0 +1,58 @@
+.signInUp {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column:  6 /span 7;
+}
+.signIn
+{
+    color: #ffffff;
+    width: 120px;
+    height: 45px;
+    border: 0.5px solid #ffffff;
+    border-bottom-left-radius: 15px;
+    margin-right: 0.75em;
+}
+
+.signIn:hover
+{
+    transition: 0.5s;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+}
+
+.signIn:active
+{
+    background-color: rgba(102, 252, 241, 0.5);
+    color: #ffffff;
+}
+
+.signUp
+{
+    width: 120px;
+    height: 45px;
+    color: #000000;
+    background-color: var(--color-text);
+    border-top-right-radius: 15px;
+}
+
+.signUp:hover
+{
+    border: 5px solid #90fbf4;
+    text-shadow: 0px 0px 60px #73fff6,
+    0 0 50px #73fff6,
+    0 0 80px #73fff6,
+    0 0 60px #73fff6,
+    0 0 160px #ffffff;
+}
+
+.signUp:active
+{
+    transition: 0.5s;
+    background-color: rgba(102, 252, 241, 0.5);
+    color: #ffffff;
+}

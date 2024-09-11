@@ -1,0 +1,20 @@
+
+
+
+.removeScroll
+{
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.removeScroll::-webkit-scrollbar
+{
+    display: none;
+    overflow: scroll;
+}
+@media (min-width: 1024px)
+{
+    .removeScroll
+    {
+        overflow: scroll;
+    }
+}

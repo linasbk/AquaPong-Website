@@ -1,0 +1,58 @@
+.avatar {
+  position: relative;
+  grid-column: 3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.imageName {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.profileSetting {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #66FCF1; /* Adjust color based on your background */
+  display: none; /* Hide text by default */
+  font-size: 2em; /* Adjust size as needed */
+  text-align: center;
+  cursor: pointer;
+}
+
+.avatar:hover .profileSetting {
+  position: absolute;
+  display: block; /* Show text on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar:hover .imageName {
+  transition: 0.5s;
+  border: 1px solid #66FCF1;
+  box-shadow: 0 0 8px #66FCF1; /* Optional: Add shadow effect */
+}
+
+.active
+{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  color: #66FCF1;
+  border-radius: 50%;
+  font-size: 2.5em;
+}

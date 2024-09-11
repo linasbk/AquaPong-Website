@@ -1,0 +1,40 @@
+.container > h1 {
+    color: hsl(0, 0%, 28%);
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    animation: Animantion 4s infinite;
+  }
+  
+.container > h1 span {
+    transition: 0.5s ease-out;
+  }
+.container > h1:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+.container > h1:hover span:nth-child(1):after {
+    content: "'";
+  }
+.container > h1:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+.container > h1:hover span {
+    color: var(--color--hover);
+    text-shadow: 0 0 10px var(--color--hover), 0 0 20px var(--color--hover), 0 0 40px var(--color--hover);
+}
+
+@keyframes Animantion {
+    0% {
+        color: var(--color--hover);
+        text-shadow: 0 0 10px var(--color--hover), 0 0 20px var(--color--hover), 0 0 40px var(--color--hover);
+    }
+    50% {
+        color: hsl(0, 0%, 28%);
+        text-shadow: none;
+    }
+    100% {
+        color: var(--color--hover);
+        text-shadow: 0 0 10px var(--color--hover), 0 0 20px var(--color--hover), 0 0 40px var(--color--hover);
+    }
+}

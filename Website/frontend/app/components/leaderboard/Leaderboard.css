@@ -1,0 +1,138 @@
+.Leaderboard
+{
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.673);
+    font-size: calc(1vh + 1vw / 2);
+    z-index: 100 !important;
+    padding-left: 1vw;
+}
+
+.title
+{
+    margin: 1vh;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: scroll !important;
+    box-shadow: 2px 0 10px 1px #000000; 
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.content {
+    scrollbar-width: none;
+}
+
+
+.mainTable {
+    z-index: 0;
+    border: none;
+    width: 100%;
+}
+
+
+.bar
+{
+    color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: #66FCF1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 0.9;
+
+}
+
+
+.playerRow {
+    cursor: pointer;
+    width: 100%;
+    height: 35%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.playerRow:nth-child(odd) {
+    background-color: rgba(14, 80, 83, 0.3);
+}
+
+.playerRow:hover {
+    z-index: 100;
+    background-color: rgba(0, 255, 255, 0.5);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+.username
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.score
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.rank
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px)
+{
+    .Leaderboard
+    {
+        padding-left: 0;
+        padding-bottom: 10px;
+        grid-column: 1 /span 3;
+        grid-row: 1;
+    }
+    
+}

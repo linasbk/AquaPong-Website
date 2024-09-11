@@ -1,0 +1,13 @@
+.venv/
+myvnv/
+
+.env/
+
+**/__pycache__/
+
+
+
+.venv/
+*/.venv/
+
+__pycache__/

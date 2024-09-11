@@ -1,0 +1,23 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY ./django_backend/requirements.txt /app/
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN pip install daphne
+
+COPY  ./django_backend/ /app/
+
+RUN echo '#!/bin/sh\n\
+mkdir -p media/private_messages\n \ 
+mkdir -p media/profile_images\n \
+python manage.py makemigrations Dashboard_home Sign_up chat groups notification playground\n\
+python manage.py migrate\n\
+daphne -b 0.0.0.0 -p 8000 django_backend.asgi:application\n'\
+> /app/start.sh
+
+RUN chmod +x /app/start.sh
+
+CMD ["/app/start.sh"]

@@ -1,0 +1,132 @@
+.profileContainer
+{
+    position: relative;
+    grid-row: 2 / span 1;
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 60% 40%;
+    scrollbar-width: none;
+    animation: alternate fadein 1s;
+}
+.profileContainer::-webkit-scrollbar
+{
+    display: none;
+}
+
+.infoRank
+{
+    padding: 10px;
+    grid-row: 1;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.matchHistory
+{
+    padding: 10px;
+    position: relative;
+    grid-row: 1;
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.yourClan
+{
+    padding: 10px;
+    position: relative;
+    grid-row: 2;
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.statistics
+{
+    padding: 10px;
+    position: relative;
+    grid-row: 2;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .profileContainer
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50% 45% 25%;
+        overflow: scroll;
+    }
+    .infoRank
+    {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .matchHistory
+    {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .yourClan
+    {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    .statistics
+    {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .profileContainer
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 50% 50% 35%;
+        overflow: scroll;
+        font-size: 0.8em;
+    }
+    .infoRank
+    {
+        font-size: 0.7em;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .matchHistory
+    {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .yourClan
+    {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    .statistics
+    {
+        font-size: 0.5em;
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+}
+
+@keyframes fadein
+{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

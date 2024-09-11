@@ -1,0 +1,21 @@
+FROM nginx:alpine
+
+RUN apk add --no-cache openssl
+
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout /etc/ssl/private/selfsigned.key \
+    -out /etc/ssl/certs/selfsigned.crt \
+    -subj "/C=MO/ST=KHOURIBGA/L=KHOURIBGA/O=1337/OU=student/CN=localhost" \
+    -addext "subjectAltName = IP:127.0.0.1,IP:0.0.0.0,DNS:localhost,DNS:nginx,DNS:*.internal"
+
+        # RUN addgroup -g 1001 -S appuser && adduser -u 1001 -S appuser -G appuser
+        # RUN chown -R appuser:appuser /etc/nginx /var/cache/nginx /var/run /etc/ssl/private/selfsigned.key /etc/ssl/certs/selfsigned.crt
+        
+        # USER appuser
+        
+COPY ./django_backend/nginx.conf /etc/nginx/nginx.conf
+ 
+EXPOSE 80 443
+
+
+CMD ["nginx", "-g", "daemon off;"]

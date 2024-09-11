@@ -1,0 +1,48 @@
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#scrol{
+    overflow: auto;
+    /* WebKit scrollbar */
+    scrollbar-width: thin; /* Set scrollbar width */
+    scrollbar-color: #66FCF1 rgba(0,0,0,0);
+    width: 100%;
+  
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+
+#scroll{
+    overflow: auto;
+    /* WebKit scrollbar */
+    scrollbar-width: thin; /* Set scrollbar width */
+    scrollbar-color: #66FCF1 rgba(0,0,0,0);
+    width: 100%;
+  
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.h {
+    background-image: url('./file.png');
+  }
+#time{
+
+        font-size: 10px; /* Set the font size to 16 pixels */
+   
+}
+
+#imojii{
+    height: 1px;
+    width: 5/6;
+    background-color: #66FCF1;
+}

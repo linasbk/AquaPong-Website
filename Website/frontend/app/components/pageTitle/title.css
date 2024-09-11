@@ -1,0 +1,16 @@
+.textTitle
+{
+    font-size: calc(calc(2vh + 2vw) / 2);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px)
+{
+    .Tcontainer
+    {
+        display: none;
+    }
+    
+}

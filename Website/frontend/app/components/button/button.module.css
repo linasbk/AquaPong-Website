@@ -1,0 +1,107 @@
+
+
+.button {
+    height: 45px;
+    width: 185px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .button_box{
+    border-style: none;
+    height: 60px;
+    width: 200px;
+    border: none;
+    padding: 0 60px;
+    color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    outline: none;
+    position: relative;
+  }
+  .button_box:before {
+    content: "";
+    width: 85%;
+    height: 30px;
+    display:block;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0,.53,1,1.08);
+    transition: width 0.2s, height 0.2s;
+  }
+  
+  .button_box:after {
+    content: "";
+    width: 85%;
+    height: 30px;
+    display:block;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0,.53,1,1.08);
+    transition: width 0.2s, height 0.2s; 
+  }
+  .button_box span {
+    justify-content: center;
+    align-items: center;
+    display:block;
+    color: black;
+  }
+  .button_box span:before {
+    content:"";
+    width: 42px;
+    height: 2px;
+    background: #E0E0E0;
+    position: absolute;  
+    left: -5px;
+    bottom: 14px;
+    transform: rotate(46deg);
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0,.53,1,1.08);
+    transition: width 0.2s, height 0.2s;
+  }
+  .button_box span:after {
+    content:"";
+    width: 42px;
+    height: 2px;
+    background: #E0E0E0;
+    position: absolute;
+    right: -5px;
+    top: 14px;
+    transform: rotate(46deg);
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0,.53,1,1.08);
+    transition: width 0.2s, height 0.2s; 
+  }
+  .button_box:hover {
+    cursor: pointer;
+  }
+  
+  .button_box:hover:before {
+    width: 100%;
+    height: 60px;
+  }
+  .button_box:hover:after {
+    width: 100%;
+    height: 60px;
+  }
+  .button_box:hover span:before {
+    width: 0px;
+    height: 0px;
+  }
+  .button_box:hover span:after {
+    width: 0px;
+    height: 0px;
+  }

@@ -1,0 +1,9 @@
+body
+{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 80px calc(100vw - 160px) 80px;
+    grid-template-rows: 80px calc(100vh - 140px) 60px;
+}

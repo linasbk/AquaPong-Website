@@ -1,0 +1,61 @@
+.tournament
+{
+    font-size: clamp(10px, 0.5vw, 20px);
+    position : relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 75%;
+    overflow: scroll;
+    scrollbar-color: rgba(102, 252, 241, 1) rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.241);
+}
+.soloGames
+{
+    font-size: clamp(10px, 0.5vw, 20px);
+    height: 75%;
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-color: rgba(102, 252, 241, 1) rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.241);
+}
+
+.soloGames::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.soloGames::-webkit-scrollbar-thumb
+{
+    background-color: rgba(102, 252, 241, 1);
+    border-radius: 10px;
+}
+
+
+.tournament::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tournament::-webkit-scrollbar-thumb
+{
+    background-color: rgba(102, 252, 241, 1);
+    border-radius: 10px;
+}
+
+/* 
+.tournament::-webkit-scrollbar
+{
+
+} */

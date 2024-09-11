@@ -1,0 +1,70 @@
+.popUpContainer
+{
+    z-index: 1000;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    height: 110vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+
+.LogoutPopUp
+{
+    height: 40vh;
+    width: 50vw;
+    color: #FFFFFF;
+    position: absolute;
+    background-color: rgba(9, 9, 9, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.LogoutPopUp h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buttons
+{
+    transform: scale(0.8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .buttons
+    {
+        transform: scale(0.6);
+    }
+    .LogoutPopUp h1
+    {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .LogoutPopUp h1
+    {
+        font-size: 15px;
+    }
+
+}
+

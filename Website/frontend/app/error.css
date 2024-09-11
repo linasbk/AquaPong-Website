@@ -1,0 +1,25 @@
+.NotFoundTitle, #NotFoundPage, #GoHome , #LandingPage{
+    font-family: var(--font-family);
+}
+.NotFoundTitle {
+    animation: animate 5s linear infinite;
+}
+
+.NotFoundDiv {
+    text-shadow: #43a9a2;
+}
+
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 80%, 90%, 92% {
+        color: #43a9a2;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 85%, 92%, 100% {
+        color: var(--color-text);
+        text-shadow: 0 0 10px #00ffee,
+        0 0 20px #00ffee,
+        0 0 40px #00ffee,
+        0 0 80px #00ffee,
+        0 0 160px #00ffee;
+    }
+}

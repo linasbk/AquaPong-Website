@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family: 'montserrat';
+    src: url('../../assets/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+
+.homeContainer
+{
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    animation: fadein 1s;
+}
+
+.shortMap
+{
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(15, 251, 255); */
+}
+
+.globalChat
+{
+    font-family: 'montserrat';
+    position: relative;
+    grid-column: 1 ;
+    grid-row: 1 / span 2;
+    width: 100%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px)
+{
+    .homeContainer
+    {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 60%;
+    }
+    .globalChat
+    {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
+}
+
+@keyframes fadein
+{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

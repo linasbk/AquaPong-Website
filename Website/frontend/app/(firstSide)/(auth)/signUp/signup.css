@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+form, fieldset, legend, input, button, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+form {
+  display: block;
+}
+.form__group {
+    position: relative;
+    margin: 1%;
+    padding: 6% 3% 0 3%;
+    width: 100%;
+    max-width: 25rem;
+  }
+  
+  .form__field {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 0 12px 0 0;
+    outline: 0;
+    font-size: 95%;
+    color: #E0E0E0;
+    padding: 1.2em;
+    background: transparent;
+    transition: border-color 0.2s;
+    min-width: 10em;
+  }
+  .form__field--username {
+    border-radius: 12px 0 0 0;
+  }
+  
+  .form__field--password {
+    border-radius: 0 0 12px 0px;
+  }
+  .form__field--gender {
+    width: 100%;
+    margin-top: -1.1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 95%;
+    background: transparent;
+    border: 1px solid #E0E0E0;
+    outline: 0;
+    color: #9b9b9b;
+    min-width: 10em;
+    margin-bottom: 1rem;
+    border-radius: 0 0 0 12px;
+    position: relative;
+  }
+  
+  .form__field--gender select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #272727cf;
+    border-radius: 0 0 0 12px;
+    width: 100%;
+    padding: 1.2rem;
+    padding-right: 2.5rem;
+  }
+  
+  .form__field--gender::after {
+    content: "\25be";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #9b9b9b;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size:  95%;
+    font-weight: bold;
+    padding: 6% 0 0 6%;
+    cursor: text;
+    top: 1.5em;
+  }
+  
+  .form__label {
+    font-family: 'Inter', sans-serif;
+    font-size:  95%;
+    position: absolute;
+    top: -10%;
+    display: block;
+    transition: 0.5s;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:placeholder-shown:focus ~ .form__label {
+    padding: 0;
+    font-size:  95%;
+  }
+  .form__field:focus {
+    font-size:  95%;
+    border: none;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    outline: none;
+    top: -10%;
+    border-bottom: 2px solid transparent; 
+    border-image: linear-gradient(to right, var(--color-text), #27a9a1) 3; 
+  }
+  
+  .form__field:focus ~ .form__label {
+    font-size:  95%;
+    font-weight: bold;
+    position: absolute;
+    top: -10%;
+    padding-bottom: 5%;
+    display: block;
+    transition: 0.2s;
+    color: var(--color-text);
+  }
+  
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+  
+  .forgot-password {
+    text-align: left;
+    text-indent: 20px;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  
+  @media only screen and (max-width: 699px) {
+  .card-container {
+    width: 100% !important;
+    height: 41.7rem !important;
+    max-height: fit-content;
+  }
+  .card-container_left {
+    justify-content:flex-start;
+    width: 90% !important;
+    height: 100% !important;
+    border-radius: 0;
+  }
+  .card-container_right {
+      display: none;
+  }
+  .form__group {
+    justify-content: center;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 1300px) {
+  .form__group {
+    position: relative;
+    margin: 10px;
+    padding: 20px 10px 0px 10px;
+    width: 100%;
+    max-width: 19.5rem;
+  }
+  }

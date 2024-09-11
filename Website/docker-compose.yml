@@ -1,0 +1,91 @@
+version: '3'
+
+services:
+  postgres_db:
+    container_name: postgres
+    image: postgres:latest
+    env_file:
+      - ./django_backend/.env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - internal_network
+      - external_network
+
+  redis_db:
+    container_name: redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - internal_network
+      - external_network
+
+  django:
+    container_name: django
+    build:
+      dockerfile: django_backend/Dockerfile-django
+    volumes:
+      - django_files:/app
+    ports:
+      - "8000:8000"
+    restart: always
+    depends_on:
+      - postgres_db
+      - redis_db
+    networks:
+      - internal_network
+      - external_network
+ 
+
+  nginx:
+    container_name: nginx
+    build:
+      dockerfile: django_backend/Dockerfile-nginx
+    volumes:
+      - django_files:/app
+      - certs:/etc/ssl/certs
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    depends_on:
+      - django
+    networks:
+      - internal_network
+      - external_network
+
+  nextjs:
+    container_name: nextjs
+    build:
+      dockerfile: frontend/Dockerfile-nextjs
+    volumes:
+      - nextjs_files:/app
+      - certs:/certs
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      nginx:
+        condition: service_started
+      django:
+        condition: service_started
+    env_file:
+      - ./frontend/.env
+    networks:
+      - internal_network
+      - external_network
+      
+
+volumes:
+  pg_data:
+  django_files:
+  nextjs_files:
+  certs:
+
+networks:
+  internal_network:
+    internal: true
+  external_network:

@@ -1,0 +1,107 @@
+.registrationContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 9;
+}
+
+    .waveShape{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .animatedContainer{
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      
+    }
+    .ocean { 
+      width: 100%;
+      height: 50%;
+      position:absolute;
+      bottom:0;
+      left:0;
+      background: #50AAA4;
+    }
+    
+    .wave {
+    background-color: #50AAA4;
+    -webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    bottom: 100%;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    }
+    
+    .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+    }
+    
+    
+    @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+    }
+    @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+    }
+
+    
+
+    @media screen and (max-width: 719px){
+      .animatedContainer{
+        height: 30vh;
+
+      }
+      .registrationContainer {
+        height: 100%;
+      }
+      .waveShape{
+        overflow: hidden;
+        height: 0;
+      }
+      
+    }
+    @media screen and (max-height: 900px) and (min-width: 720px) {
+      .animatedContainer{
+        height: 38vh;
+      }
+      .ocean { 
+        width: 100%;
+        height: 28%;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background: #50AAA4;
+      }
+      .registrationContainer {
+        width: 60%;
+      }
+    }
+
+    
