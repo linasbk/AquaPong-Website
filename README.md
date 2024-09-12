@@ -73,7 +73,6 @@ You should first modify .env.example and rename it to .env !!
 
 <a name="cons"></a>
 # Conception
-<picture >
 
 <a name="mode"></a>
 # Models
