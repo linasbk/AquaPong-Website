@@ -1,7 +1,22 @@
-# AquaPong Website
-About :
-Welcome to the AquaPong world! Here 🚀 , users can play singles games of pingpong 🏓, take part in tournaments, and hone their skills while connecting with other users and tracking their progress and achievements 🏅.
+# AquaPong Website 🏓
+Welcome to the AquaPong world! Here 🚀 , users can play single games of pingpong 🏓, take part in tournaments, and hone their skills while connecting with other users and tracking their progress and achievements 🏅.
 
+# Index
+1. [ Usage ](#usage)
+2. [ Technologies Used ](#tech)
+3. [ Conception ](#cons)
+4. [ File Structure](#file)
+5. [ Models ](#mode)
+6. [ Preview ](#prev)
+7. [ Ressources ](#ress)
+
+<a name="usage"></a>
+# Usage
+![Command Usage](assets/Usage.png)
+You should first modify .env.example and rename it to .env !!
+
+<a name="tech"></a>
+# Technologies Used
 <table class="steelBlueCols">
 <thead>
 <tr>
@@ -56,4 +71,71 @@ Welcome to the AquaPong world! Here 🚀 , users can play singles games of pingp
 </tbody>
 </table>
 
-![Command Usage](assets/Usage.png)
+<a name="cons"></a>
+# Conception
+<picture >
+
+<a name="mode"></a>
+# Models
+
+<a name="prev"></a>
+# Preview
+
+<a name="file"></a>
+# File Structure
+```bash
+django_backend
+│   ├── Dashboard_home
+│   ├── Sign_up
+│   ├── chat
+│   ├── django_backend
+│   ├── groups
+│   ├── notification
+│   ├── playground
+frontend
+│   ├── app
+│   │   ├── (firstSide)
+│   │   │   │   ├── signIn
+│   │   │   │   ├── signUp
+│   │   │   ├── landingPage
+│   │   ├── (playground)
+│   │   │   ├── playground
+│   │   │   ├── privateGame
+│   │   │   ├── tournament
+│   │   ├── (scondSide)
+│   │   │   ├── chatPage
+│   │   │   ├── clanPage
+│   │   │   ├── gamePage
+│   │   │   ├── homePage
+│   │   │   │   ├── [id]
+│   │   │   ├── setPassword
+│   │   │   ├── settingsPage
+│   │   ├── ErrorPage
+│   │   ├── api
+│   │   ├── assets
+│   │   ├── callback
+│   │   ├── chat
+│   │   ├── components
+│   │   ├── contexts
+│   │   ├── globalchat
+│   │   ├── group_chat
+│   │   ├── styles
+│   │   ├── utils
+│   ├── public
+│   │   ├── clans
+│   │   ├── gameElement
+│   │   ├── maps
+│   │   ├── ranks
+│   │   ├── soundEffect
+```
+
+<a name="ress"></a>
+# Ressources
+
+https://nextjs.org/
+
+https://codevoweb.com/django-implement-2fa-two-factor-authentication/
+
+https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/#When-to-Use-Refresh-Tokens
+
+https://www.django-rest-framework.org/api-guide/authentication/
