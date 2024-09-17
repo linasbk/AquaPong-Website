@@ -73,6 +73,34 @@ You should first modify .env.example and rename it to .env !!
 <a name="prev"></a>
 # Preview
 
+![Command LandingPage](assets/LandingPage.png)
+
+![Command SignUp](assets/SignUp.png)
+
+![Command SignIn](assets/SignIn.png)
+
+![Command Settings](assets/Settings.png)
+
+![Command 2FA](assets/2FA.png)
+
+![Command Search](assets/Search.png)
+
+![Command Profile](assets/Profile.png)
+
+![Command PrivateChat](assets/PrivateChat.png)
+
+![Command ViewProfile](assets/ViewProfile.png)
+
+![Command ClanJoin](assets/ClanJoin.png)
+
+![Command Map](assets/Map.png)
+
+![Command SoloMatch](assets/SoloMatch.png)
+
+![Command Tournament](assets/Tournament.png)
+
+![Command Game](assets/Game.png)
+
 <a name="file"></a>
 # File Structure
 ```bash
