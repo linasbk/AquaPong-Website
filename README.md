@@ -72,32 +72,46 @@ You should first modify .env.example and rename it to .env !!
 
 <a name="prev"></a>
 # Preview
+<h4>LandingPage</h4>
 
 ![Command LandingPage](assets/LandingPage.png)
+<h4>SignUp</h4>
 
 ![Command SignUp](assets/SignUp.png)
+<h4>SignIn</h4>
 
 ![Command SignIn](assets/SignIn.png)
+<h4>Settings</h4>
 
 ![Command Settings](assets/Settings.png)
+<h4>Two Factor Auth</h4>
 
 ![Command 2FA](assets/2FA.png)
+<h4>Dashboard</h4>
 
 ![Command Search](assets/Search.png)
+<h4>Profile</h4>
 
 ![Command Profile](assets/Profile.png)
+<h4>PrivateChat</h4>
 
 ![Command PrivateChat](assets/PrivateChat.png)
+<h4>View Profile</h4>
 
 ![Command ViewProfile](assets/ViewProfile.png)
+<h4>Join Clan</h4>
 
 ![Command ClanJoin](assets/ClanJoin.png)
+<h4>Map</h4>
 
 ![Command Map](assets/Map.png)
+<h4>Solo Match</h4>
 
-![Command SoloMatch](assets/SoloMatch.png)
+![Command soloMatch](assets/soloMatch.png)
+<h4>Tournament</h4>
 
 ![Command Tournament](assets/Tournament.png)
+<h4>3D Game</h4>
 
 ![Command Game](assets/Game.png)
 
