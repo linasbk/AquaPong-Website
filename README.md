@@ -69,6 +69,28 @@ You should first modify .env.example and rename it to .env !!
 
 <a name="mode"></a>
 # Models
+<ul>
+<li><b>Use a Framework as backend</b></li>
+    <p>This module is really important because it uses a specific web framework in backend development, called Django. It has some great features,
+        like MTV Architecture, which helps you organise your code into Models, Templates, and Views for cleaner, easier-to-maintain applications
+      ORM: Makes database operations easier with Python objects.
+      Admin Panel: Makes it simple to build backend interfaces.
+      Built-in Security: Protects against common web vulnerabilities.
+      Scalability: Makes sure your applications can handle high traffic.
+      Community Support: Gives you access to a rich ecosystem of packages and resources.</p>
+<li>2 Minor module: Game Customization Options.</li>
+<li>3 Major module: Standard user management, authentication, users across tournaments.</li>
+<li>4 Major module: Live chat.</li>
+<li>0.5 Minor module: User and Game Stats Dashboards</li>
+<li>5 Minor module: Support on all devices.</li>
+<li>6 Major module: Use of advanced 3D techniques.</li>
+<li>7 Major module: Remote player</li>
+<li>BONUS:</li>
+<li>0.5 Minor module: Expanding Browser Compatibility.</li>
+<li>Major module: Implement Two-Factor Authentication (2FA) and JWT Major module: Implementing a remote authentication.</li>
+<li>PLUS:</li>
+<li>0.5 Minor module: Server-Side Rendering (SSR) Integration</li>
+</ul>
 
 <a name="prev"></a>
 # Preview
