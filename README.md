@@ -78,10 +78,22 @@ You should first modify .env.example and rename it to .env !!
       Built-in Security: Protects against common web vulnerabilities.
       Scalability: Makes sure your applications can handle high traffic.
       Community Support: Gives you access to a rich ecosystem of packages and resources.</p>
-<li>2 Minor module: Game Customization Options.</li>
-<li>3 Major module: Standard user management, authentication, users across tournaments.</li>
-<li>4 Major module: Live chat.</li>
-<li>0.5 Minor module: User and Game Stats Dashboards</li>
+<li><b>Use Database for the backend</b></li>
+    <p> This module ensures the consistency and compatibility of data across the website, 
+        which is a prerequisite for the framework module, in this model, we use PostgreSQL an open-source database that uses SQL to store data,
+        and is reliable and robust, and the open-source community behind it is dedicated to delivering innovative solutions. </p>
+<li><b>Game Customization Options</b></li>
+    <p>This module shows how to customize all the games on the platform. We want to:
+        We'll offer customization features like different maps to improve gameplay.
+        Users can choose a simpler version of the game with basic features.
+        All games on the platform should have the same customization features.
+        Users should be able to adjust game settings easily.</p>
+<li><b>Standard user management, authentication, users across tournaments</b></li>
+    <p>This module looks at how users interact with and access the Pong platform. It has two parts. One is about users taking part in different tournaments,The other is about using remote authentication.</p>
+<li><b>Live chat</b></li>
+    <p>In this module, we implement a chat functionality for your users. This enables users to send messages to other users, block them, and invite them to play a Pong game. Furthermore, users should be able to access other players' profiles.</p>
+<li><b>User and Game Stats Dashboards</b></li>
+    <p> In this module, we are creating a system showing statistical data about users and gaming sessions. </p>
 <li>5 Minor module: Support on all devices.</li>
 <li>6 Major module: Use of advanced 3D techniques.</li>
 <li>7 Major module: Remote player</li>
