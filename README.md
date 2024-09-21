@@ -94,14 +94,18 @@ You should first modify .env.example and rename it to .env !!
     <p>In this module, we implement a chat functionality for your users. This enables users to send messages to other users, block them, and invite them to play a Pong game. Furthermore, users should be able to access other players' profiles.</p>
 <li><b>User and Game Stats Dashboards</b></li>
     <p> In this module, we are creating a system showing statistical data about users and gaming sessions. </p>
-<li>5 Minor module: Support on all devices.</li>
-<li>6 Major module: Use of advanced 3D techniques.</li>
-<li>7 Major module: Remote player</li>
-<li>BONUS:</li>
-<li>0.5 Minor module: Expanding Browser Compatibility.</li>
-<li>Major module: Implement Two-Factor Authentication (2FA) and JWT Major module: Implementing a remote authentication.</li>
-<li>PLUS:</li>
-<li>0.5 Minor module: Server-Side Rendering (SSR) Integration</li>
+<li><b>Minor module: Support on all devices</b></li>
+    <p>This module guarantees that our site works seamlessly on all devices. It is fully responsive, adapts to different screen sizes and orientations, and             provides a consistent user experience on desktops, laptops, tablets, and smartphones. Users can easily interact and navigate the website using different         input methods, including touch screens and keyboards. </p>
+<li><b>Use of advanced 3D techniques</b></li>
+    <p>In this model, the ThreeJS framework is employed to facilitate the integration of 3D graphics within the gaming environment. This approach aims to enhance the overall gameplay experience for players through the utilisation of advanced techniques, ensuring compatibility and optimal performance.</p>
+<li><b>Remote player</b></li>
+    <p>This module implements a server-side game to offer the best user experience possible. It allows each distant player to play against another. WebSocket             ensures a bidirectional, stable connection between players and the server.</p>
+<li><b>Expanding Browser Compatibility</b></li>
+    <p>The objective of this minor module is to enhance the accessibility of the web application by offering users the option of an additional web browser,             thereby providing them with a greater degree of choice in terms of their browsing experience.</p>
+<li><b>Major module: Implement Two-Factor Authentication (2FA) and JWT Major module: Implementing a remote authentication</b></li>
+    <p>The principal objective of this significant module is to reinforce the security of user accounts by providing two-factor authentication (2FA) and by             augmenting the authentication and authorisation processes through the utilisation of JSON Web Tokens (JWT).</p>
+<li><b>Server-Side Rendering (SSR) Integration</b></li>
+    <p>The objective of this module is to enhance website performance and search engine optimisation (SEO) by integrating server-side rendering, which                 facilitates faster page loads and an enhanced user experience.</p>
 </ul>
 
 <a name="prev"></a>
