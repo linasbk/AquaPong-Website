@@ -65,7 +65,12 @@ You should first modify .env.example and rename it to .env !!
 </table>
 
 <a name="cons"></a>
+
 # Conception
+
+<h3>Use Case Diagram</h3>
+
+![Command Conception](assets/conception.png)
 
 <a name="mode"></a>
 # Models
